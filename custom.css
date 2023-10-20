@@ -1,0 +1,15 @@
+html {
+    /* When visiting a link to a PR comment (hard navigation), the sticky nav
+    obscures the PR comment. This fixes that. */
+    scroll-padding-top: 60px;
+}
+
+.previewable-comment-form textarea {
+    /* The default (100px) is too small. */
+    min-height: 200px !important;
+}
+
+.branch-action-item.open>.merge-status-list {
+    /* Removes scroller. */
+    max-height: none !important;
+}

@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub Custom CSS",
+    "version": "1.0",
+    "description": "Inject custom CSS on GitHub",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://github.com/*"],
+        "css": ["custom.css"]
+      }
+    ]
+  }
